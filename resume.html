@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M DEEPIKA - AI & ML Engineer | Full Stack Developer Resume</title>
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --primary-dark: #0f172a;
+      --accent: #2563eb;
+      --text: #1e293b;
+      --text-muted: #475569;
+      --bg: #ffffff;
+      --border: #cbd5e1;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: var(--text);
+      background-color: #f1f5f9;
+      line-height: 1.45;
+      padding: 1.5rem 1rem;
+    }
+
+    .resume-container {
+      max-width: 860px;
+      margin: 0 auto;
+      background: var(--bg);
+      padding: 2.2rem 2.8rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 1.2rem;
+      margin-bottom: 1.1rem;
+      gap: 1.5rem;
+    }
+
+    .header-info {
+      flex: 1;
+    }
+
+    .name {
+      font-size: 2.1rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+    }
+
+    .title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-top: 0.25rem;
+      margin-bottom: 0.45rem;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem 1rem;
+      font-size: 0.84rem;
+      color: var(--text-muted);
+    }
+
+    .contact-links a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .photo-container {
+      width: 95px;
+      height: 95px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid var(--accent);
+      flex-shrink: 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .photo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Section Styles */
+    section {
+      margin-bottom: 1.15rem;
+    }
+
+    .section-title {
+      font-size: 0.98rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--primary);
+      border-bottom: 1.5px solid var(--border);
+      padding-bottom: 0.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p, li {
+      font-size: 0.88rem;
+      color: #334155;
+    }
+
+    .summary-text {
+      text-align: justify;
+      line-height: 1.45;
+    }
+
+    /* Skills Grid */
+    .skills-category {
+      margin-bottom: 0.35rem;
+      font-size: 0.875rem;
+      line-height: 1.4;
+    }
+
+    .skills-category strong {
+      color: var(--primary-dark);
+    }
+
+    /* Items */
+    .item {
+      margin-bottom: 0.85rem;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.15rem;
+    }
+
+    .item-title {
+      font-size: 0.94rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+    }
+
+    .item-subtitle {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .item-date {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .item-tech {
+      font-size: 0.82rem;
+      color: #475569;
+      margin-bottom: 0.25rem;
+      font-style: italic;
+    }
+
+    ul.item-bullets {
+      list-style-type: disc;
+      margin-left: 1.2rem;
+      margin-top: 0.2rem;
+    }
+
+    ul.item-bullets li {
+      margin-bottom: 0.2rem;
+      line-height: 1.4;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.84rem;
+      margin-top: 0.35rem;
+    }
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: 0.4rem 0.65rem;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f8fafc;
+      font-weight: 600;
+      color: var(--primary-dark);
+    }
+
+    /* Print styling */
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+      .resume-container {
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+      }
+      @page {
+        margin: 1cm;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="resume-container">
+    
+    <!-- Header -->
+    <header class="header">
+      <div class="header-info">
+        <h1 class="name">M DEEPIKA</h1>
+        <div class="title">AI & ML Engineer | Generative AI Engineer | AI Application Developer | Full Stack Developer</div>
+        <div class="contact-links">
+          <span>📍 Ramanathapuram, Tamil Nadu, India</span>
+          <span>🇮🇳 Nationality: Indian</span>
+          <span>📞 +91 9789719885</span>
+          <span>✉️ <a href="mailto:deepika84284@gmail.com">deepika84284@gmail.com</a></span>
+          <span>🔗 <a href="https://linkedin.com/in/m-deepika-6aa17a325" target="_blank">LinkedIn</a></span>
+          <span>💻 <a href="https://github.com/deepika84284-ship-it" target="_blank">GitHub</a></span>
+          <span>🌐 <a href="https://deepz-one.vercel.app" target="_blank">deepz-one.vercel.app</a></span>
+          <span>🌐 <a href="https://protfolio-kappa-flame.vercel.app" target="_blank">protfolio-kappa-flame.vercel.app</a></span>
+        </div>
+      </div>
+      <div class="photo-container" title="Profile Photo">
+        <img src="https://github.com/deepika84284-ship-it.png" alt="M DEEPIKA" onerror="this.onerror=null; this.src='https://via.placeholder.com/95?text=DEEPIKA';" />
+      </div>
+    </header>
+
+    <!-- Profile -->
+    <section>
+      <h2 class="section-title">PROFILE</h2>
+      <p class="summary-text">
+        Final-year B.E. Computer Science and Engineering student (CGPA: 8.24/10) and AI & ML Engineer / Full Stack Developer with hands-on expertise in Python, Machine Learning, Deep Learning, Natural Language Processing, and Generative AI. Experienced in building production-ready AI applications using the Google Gemini API, Retrieval-Augmented Generation (RAG), vector embeddings, and local LLM deployment with Ollama (Qwen2.5 7B). Skilled in MERN Stack (MongoDB, Express.js, React.js, Node.js), REST API architecture, AI-assisted engineering, and Prompt Engineering. Strong foundation in database systems, authentication, cloud deployment, and end-to-end problem solving.
+      </p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section>
+      <h2 class="section-title">TECHNICAL SKILLS</h2>
+      <div class="skills-category">
+        <strong>Artificial Intelligence & Generative AI:</strong> Artificial Intelligence (AI), Generative AI, Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), Prompt Engineering, AI APIs and Model Integration, AI Agents, Vector Databases, Embeddings, Semantic Search, Document Question-Answering Systems, Ollama (Local LLMs)
+      </div>
+      <div class="skills-category">
+        <strong>AI & Prompt Engineering Tools:</strong> Prompt Engineering, ChatGPT, Google Gemini, Claude, Grok, GitHub Copilot, Cursor, CodeRabbit, Snyk, DeepSource, Reviewpad, Perplexity, NotebookLM, Zapier, Gamma, Otter.ai, AI-Assisted Development, LLM Workflows
+      </div>
+      <div class="skills-category">
+        <strong>Machine Learning & Deep Learning:</strong> Machine Learning (ML), Supervised & Unsupervised Learning, Regression, Classification, Clustering, Feature Engineering, Model Training, Validation & Evaluation, Hyperparameter Tuning, Overfitting & Underfitting, Deep Learning, Neural Networks, TensorFlow, PyTorch, CNNs, Deep Learning Fundamentals
+      </div>
+      <div class="skills-category">
+        <strong>Data Science, NLP & Computer Vision:</strong> NumPy, Pandas, Matplotlib, Seaborn, Data Cleaning, Preprocessing, EDA, Statistical Analysis, Data Visualization, Natural Language Processing (NLP), Text Processing, Tokenization, NLP Fundamentals, Computer Vision, Image Classification, Image Preprocessing
+      </div>
+      <div class="skills-category">
+        <strong>Frontend Development:</strong> React.js, JavaScript (ES6+), TypeScript, HTML5, CSS3, State Management, Vite, Responsive Design
+      </div>
+      <div class="skills-category">
+        <strong>Backend & Databases:</strong> Node.js, Express.js, MongoDB & Mongoose, MongoDB Atlas, RESTful API Design, JWT Authentication, CRUD Operations, Laravel, DBMS
+      </div>
+      <div class="skills-category">
+        <strong>Core Fundamentals:</strong> Data Structures & Algorithms (DSA), Object-Oriented Programming (OOP), Operating Systems (OS), Computer Networks, Database Management Systems (DBMS), Problem Solving
+      </div>
+      <div class="skills-category">
+        <strong>Tools, DevOps & Cloud:</strong> Git & GitHub, Postman, Docker, Jenkins, Vite, Netlify, Render, Railway, Vercel, Azure, Antigravity IDE, Virtual Environments, pip, Environment Variables (.env), Debugging
+      </div>
+      <div class="skills-category">
+        <strong>UI/UX Design:</strong> Figma, Google Stitch, Wireframing, Prototyping, User Flow, Responsive Design
+      </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section>
+      <h2 class="section-title">EXPERIENCE</h2>
+      
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">AI/ML & Full Stack Developer Intern — Zazu Technologies, Coimbatore</span>
+          <span class="item-date">01 Aug 2026 – Sep 2026</span>
+        </div>
+        <ul class="item-bullets">
+          <li>Developed full-stack web applications using React.js, Node.js, Express.js, and MongoDB, integrating REST APIs and CRUD operations.</li>
+          <li>Gained hands-on experience with database concepts, authentication, debugging, and responsive web development.</li>
+          <li>Trained in Python programming for machine learning and production AI application development.</li>
+          <li>Studied and implemented core machine learning concepts, including data preparation, model training, validation, and evaluation.</li>
+          <li>Mastered Large Language Model (LLM) concepts, prompt workflows, and practical integration into modern AI applications.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Full Stack Development Intern — DecodeLabs</span>
+          <span class="item-date">Jun 2026 – Jul 2026</span>
+        </div>
+        <ul class="item-bullets">
+          <li>Completed a virtual full-stack development internship, translating theoretical concepts into production-ready software solutions.</li>
+          <li>Built and delivered backend REST APIs with 5+ endpoints, reducing manual data-handling effort through structured error handling and schema validation.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Web Development Intern — SyntexHub</span>
+          <span class="item-date">Dec 2025 – Jan 2026 & Jun 2026 – Jul 2026</span>
+        </div>
+        <ul class="item-bullets">
+          <li>Completed two web development internships at SyntexHub, building and deploying 5+ production-ready responsive pages using HTML, CSS, JavaScript, and React JS.</li>
+          <li>Utilized Git version control in an agile, collaborative workflow.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Key Projects -->
+    <section>
+      <h2 class="section-title">KEY PROJECTS</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">AI Smart Assistant</span>
+          <span class="item-date">Personal Project</span>
+        </div>
+        <div class="item-tech">Python, Google Gemini API, Streamlit, python-dotenv, Embeddings, Vector Search (RAG), Antigravity IDE</div>
+        <ul class="item-bullets">
+          <li>Built an AI assistant in Python with a Streamlit interface: chat screen, sidebar, PDF upload and action buttons.</li>
+          <li>Implemented a RAG pipeline: uploaded PDF text is split into chunks, converted to embeddings and searched by vector similarity, so answers are grounded in the most relevant passages.</li>
+          <li>Integrated the Google Gemini API to generate answers from the retrieved content; the API key is loaded securely from a .env file using python-dotenv.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Luna — Privacy-First Local AI Desktop Assistant</span>
+          <span class="item-date">Luna Hackathon</span>
+        </div>
+        <div class="item-tech">Electron, React, Node.js, Express.js, Ollama (Qwen2.5 7B), Prompt Engineering</div>
+        <ul class="item-bullets">
+          <li>Built a desktop AI assistant using Electron with a React frontend and Express.js backend, integrating Qwen2.5 7B as a local LLM.</li>
+          <li>Ran Qwen2.5 7B locally through Ollama, so every AI task is processed on the user’s device and prompts and responses stay off third-party servers.</li>
+          <li>Designed AI interaction workflows and prompts for task-based assistance, focused on privacy by processing all AI tasks locally.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Agri-AI System — Smart Agriculture with AI</span>
+          <span class="item-date">Personal Project</span>
+        </div>
+        <div class="item-tech">React, TypeScript, Vite | Live Demo: agri.techtigers.in | GitHub: github.com/deepika84284-ship-it/agri-ai-system</div>
+        <ul class="item-bullets">
+          <li>Built and deployed a smart agriculture web application using AI-driven logic to support farmers in making informed decisions.</li>
+          <li>Designed 10+ reusable, modern UI components with React and TypeScript.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Final Year Project — Student Academic Management Portal</span>
+          <span class="item-date">B.E. CSE, MSEC</span>
+        </div>
+        <div class="item-tech">React, Laravel</div>
+        <ul class="item-bullets">
+          <li>Built a React UI for a role-based academic management portal serving Students, Faculty/Mentors, HOD and Admin/Staff.</li>
+          <li>Prepared module-wise architecture for the Laravel backend: database tables, API endpoints, permissions and UI mapping.</li>
+          <li>Modules: authentication & RBAC, student profile, results, SGPA/CGPA, arrears, attendance, internal marks, mentor-mentee, placement.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Expense Tracker API — Backend & Database</span>
+          <span class="item-date">DecodeLabs Internship</span>
+        </div>
+        <div class="item-tech">Node.js, Express.js, MongoDB | GitHub: github.com/deepika84284-ship-it/expense-tracker-api</div>
+        <ul class="item-bullets">
+          <li>Developed a RESTful API with 5+ endpoints covering complete CRUD operations, implementing proper HTTP status codes.</li>
+          <li>Integrated MongoDB Atlas using Mongoose for schema design and persistent data storage.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Strengths -->
+    <section>
+      <h2 class="section-title">STRENGTHS</h2>
+      <ul class="item-bullets">
+        <li><strong>Design & problem solving:</strong> 1st Prize in UI/UX Design at SYNAPTRA’26 National-Level Symposium; 2nd Prize at Dream to Reality, MSEC EDC.</li>
+        <li><strong>Hackathon & pitching:</strong> Regional Finalist, EDII-TN Innovation Hackathon 2024; Pitch Finalist, MSEC Alumni Meet 2026; participant in Luna Hackathon.</li>
+        <li><strong>Applied AI building:</strong> Built an AI Smart Assistant (Gemini API, RAG pipeline) and a local LLM assistant (Ollama, Qwen2.5 7B) end to end.</li>
+      </ul>
+    </section>
+
+    <!-- Achievements -->
+    <section>
+      <h2 class="section-title">ACHIEVEMENTS</h2>
+      <ul class="item-bullets">
+        <li>Winner — Project/Product Expo, Mohamed Sathak Engineering College (2023).</li>
+        <li>Winner — Tata Crucible Campus Quiz 2025, Level 1.</li>
+        <li>1st Prize, UI/UX Design — SYNAPTRA’26 National-Level Symposium, Syed Ammal Engineering College, 2026.</li>
+        <li>2nd Prize, Dream to Reality — MSEC Entrepreneurship Development Cell, Mohamed Sathak Engineering College, 2026.</li>
+        <li>Second Prize — Chess Competition, Mohamed Sathak Engineering College.</li>
+        <li>Regional Finalist — EDII-TN Innovation Hackathon 2024.</li>
+        <li>MSEC Alumni Meet 2026 Pitch Finalist — Frontend Specialist for ArogyaNext.</li>
+        <li>Certificate of Appreciation — Marketplace Hackathon, Humanity Founders, 2026.</li>
+        <li>Participant — Luna Hackathon, Humanity Founders, 2026.</li>
+      </ul>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2 class="section-title">EDUCATION</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Degree / Certificate</th>
+            <th>Institute / Board</th>
+            <th>Year</th>
+            <th>CGPA / %</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>B.E. – Computer Science Engineering</strong></td>
+            <td>Mohamed Sathak Engineering College, Kilakarai (Affiliated to Anna University)</td>
+            <td>2023 – 2027</td>
+            <td><strong>8.24 / 10</strong> <em>(up to 7th sem)</em></td>
+          </tr>
+          <tr>
+            <td>12th (HSC)</td>
+            <td>Government Higher Secondary School, Alagankulam (Tamil Medium)</td>
+            <td>2023</td>
+            <td>66%</td>
+          </tr>
+          <tr>
+            <td>10th (SSLC)</td>
+            <td>Government High School, Perungulam (English Medium)</td>
+            <td>2021</td>
+            <td>All Pass</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Certifications & Languages -->
+    <section>
+      <div style="display: flex; justify-content: space-between; gap: 1.5rem;">
+        <div style="flex: 1;">
+          <h2 class="section-title">CERTIFICATIONS</h2>
+          <ul class="item-bullets">
+            <li>First Prize, UI/UX Design — SYNAPTRA’26, Syed Ammal Engineering College, 2026</li>
+            <li>Second Prize, Dream to Reality — MSEC EDC, Mohamed Sathak Engineering College, 2026</li>
+            <li>NetBeans Certification — Score 96%, IIT Bombay</li>
+            <li>Programming Foundations — LinkedIn Learning, 2024</li>
+            <li>Labmentix Common Aptitude Test (LCAT) — Participation, 2026</li>
+          </ul>
+        </div>
+        <div style="flex: 0.6;">
+          <h2 class="section-title">LANGUAGES</h2>
+          <ul class="item-bullets">
+            <li>Tamil (Native / Fluent)</li>
+            <li>English (Professional Working Proficiency)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Declaration -->
+    <section style="margin-top: 1rem; border-top: 1px solid var(--border); padding-top: 0.6rem;">
+      <p style="font-size: 0.82rem; color: var(--text-muted);">
+        DECLARATION: I hereby declare that the above-mentioned information is true and correct to the best of my knowledge.
+      </p>
+      <p style="font-weight: 700; margin-top: 0.35rem; font-size: 0.88rem;">M DEEPIKA</p>
+    </section>
+
+  </div>
+
+</body>
+</html>
